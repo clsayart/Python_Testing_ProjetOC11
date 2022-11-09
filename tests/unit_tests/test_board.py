@@ -11,6 +11,6 @@ def test_display_board(client, mock_load):
     response_data = response.data.decode()
     print(response_data)
     assert response.status_code == 200
-    assert 'GUDLFT CLUBS' and 'CLUBS' in response_data
+    assert 'GUDLFT CLUBS' and 'POINTS' in response_data
 
 
